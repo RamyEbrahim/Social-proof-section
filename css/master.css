@@ -1,0 +1,164 @@
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    
+    .container {
+        font-family: 'Spartan', sans-serif;
+        background: url(../images/bg-pattern-top-desktop.svg) left top no-repeat, url(../images/bg-pattern-bottom-desktop.svg) right bottom no-repeat;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 70px;
+    }
+    
+    @media(max-width: 991px) {
+        .container {
+            padding: 0 10px;
+        }
+    }
+    
+    .container .top-section {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 35px;
+    }
+    
+    @media(max-width: 991px) {
+        .container .top-section {
+            flex-direction: column;
+            text-align: center;
+            padding: 50px 0px;
+            margin-bottom: 0;
+        }
+    }
+    
+    .container .top-section .left {
+        flex-basis: 40%;
+    }
+    
+    .container .top-section .left h2 {
+        font-weight: 700;
+        font-size: 40px;
+        color: hsl(300, 43%, 22%);
+        margin-bottom: 15px;
+    }
+    
+    .container .top-section .left p {
+        color: hsl(303, 10%, 53%);
+        line-height: 1.5;
+        margin-bottom: 40px;
+    }
+    
+    .container .top-section .right .holder {
+        background-color: hsl(300, 24%, 96%);
+        padding: 10px;
+        margin-bottom: 10px;
+        border-radius: 10px;
+    }
+    
+    .container .top-section .right .holder:nth-of-type(1) {
+        position: relative;
+        left: -80px;
+    }
+    
+    .container .top-section .right .holder:nth-of-type(2) {
+        position: relative;
+        left: -40px;
+    }
+    
+    @media(max-width: 991px) {
+        .container .top-section .right .holder:nth-of-type(1),
+        .container .top-section .right .holder:nth-of-type(2) {
+            position: inherit;
+        }
+    }
+    
+    .container .top-section .right span {
+        margin: 0px 30px;
+        text-transform: capitalize;
+        font-size: 13px;
+        color: hsl(300, 43%, 22%);
+        font-weight: bold;
+    }
+    
+    @media(max-width: 991px) {
+        .container .top-section .right span {
+            display: block;
+            margin-top: 10px;
+        }
+    }
+    
+    .container .bottom-section {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    @media(max-width: 991px) {
+        .container .bottom-section {
+            flex-direction: column;
+            text-align: center;
+        }
+    }
+    
+    .container .bottom-section .box {
+        background-color: hsl(300, 43%, 22%);
+        margin: 0 10px;
+        padding: 15px;
+        border-radius: 15px;
+        color: white;
+        font-size: 15px;
+        transition: 0.4s;
+        -webkit-transition: 0.4s;
+        -moz-transition: 0.4s;
+        -ms-transition: 0.4s;
+        -o-transition: 0.4s;
+    }
+    
+    .container .bottom-section .box:hover {
+        box-shadow: 0px 10px 5px 0px #ee68a4;
+        transform: translateY(-5px);
+        -webkit-transform: translateY(-5px);
+        -moz-transform: translateY(-5px);
+        -ms-transform: translateY(-5px);
+        -o-transform: translateY(-5px);
+    }
+    
+    .container .bottom-section .box:nth-of-type(1) {
+        position: relative;
+        top: -20px;
+    }
+    
+    .container .bottom-section .box:nth-of-type(2) {
+        position: relative;
+        top: -10px;
+    }
+    
+    @media(max-width: 991px) {
+        .container .bottom-section .box:nth-of-type(1),
+        .container .bottom-section .box:nth-of-type(2),
+        .container .bottom-section .box:nth-of-type(3) {
+            margin: 10px 0;
+            position: inherit;
+        }
+    }
+    
+    .container .bottom-section .box .top {
+        display: flex;
+        margin-bottom: 20px;
+        align-items: center;
+    }
+    
+    .container .bottom-section .box .top img {
+        border-radius: 50%;
+        width: 70px;
+        margin-right: 20px;
+    }
+    
+    .container .bottom-section .box .top .head h4 {
+        text-transform: capitalize;
+    }
+    
+    .container .bottom-section .box .top .head span {
+        color: hsl(333, 80%, 67%);
+        text-transform: capitalize;
+    }
